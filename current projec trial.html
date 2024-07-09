@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>current project</title>
+</head>
+<body>
+<button onclick="subscribing();" class="js-subscribe">subscribe</button>
+
+  <p>Amazon Calculator</p>
+  
+  <input placeholder="add amount here" class="js-input-cost" onkeydown="handleCostKeydown(event)";> 
+<button onclick="costCalculating()" class="js-calculate-cost">Calculate</button>
+
+<p class="js-total-cost"></p>
+  
+<script>
+
+function subscribing(){
+  let buttonElement = document.querySelector('.js-subscribe');
+  if(buttonElement.innerHTML==='subscribe'){
+    buttonElement.innerHTML='subscribed';
+  } else {
+    buttonElement.innerHTML='subscribe';
+  }
+}
+
+function costCalculating(){
+  let costInput = document.querySelector('.js-input-cost');
+  let cost = parseFloat(costInput.value);
+
+  if(cost < 40){
+    cost += 10;
+  }
+
+function handleCostKeydown(event){
+  if(event.key==='Enter'){
+  costCalculating();
+  }
+
+}
+  // Display the total cost on the screen
+  let totalCostElement = document.querySelector('.js-total-cost');
+  totalCostElement.innerHTML = `Total Cost: $${cost}`;
+}
+
+</script>  
+</body>
+</html>

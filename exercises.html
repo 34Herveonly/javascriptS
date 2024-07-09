@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercises</title>
+</head>
+<body>
+  <button class="js-9a">9a</button>
+  <button class="js-9b">9b</button>
+  <p>
+<button onclick="alert('you chose Heads')">Heads</button>
+<button onclick="alert('you chose Tails')">Tails</button>
+</p>
+<p>
+  <input placeholder="Enter your Name" class="js-name-input" onkeydown="handleCostKeydown(event)">
+  <button onclick="displayName()">Submit</button>
+</p>
+
+
+  <script>
+  console.log(
+document.querySelector('.js-9a'));
+console.log(document.querySelector('.js-9b').innerHTML='9c');
+
+function displayName(){
+const inputElement=document.querySelector('.js-name-input');
+let result=(inputElement.value);
+alert(`your name is ${result}`)
+}
+
+function handleCostKeydown(event){
+  if(event.key==='Enter'){
+displayName();
+  }
+
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .sign-color{
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    border-radius: 110px;
+    padding: 10px;
+    margin: 5px 01px;
+  }
+  .button-color{
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    border-radius: 330px;
+    padding: 10px;
+    margin: 5px 3px;
+  }
+  .body{
+    background-color: black;
+  }
+  .color{
+    align-content: center;
+  }
+</style>
+
+  calculator
+  <title>calculator</title>
+</head>
+<body>
+  <p><button onclick="1" class="button-color">1</button>
+  <button onclick="console.log(2)" class="button-color">2</button>
+  <button onclick="console.log(3)" class="button-color">3</button>
+  <button onclick="mySign('+')" class="sign-color"></button></p>
+<p><button onclick="console.log(4)" class="button-color">4</button>
+  <button onclick="console.log(5)" class="button-color">5</button>
+  <button onclick="console.log(6)" class="button-color">6</button>
+  <button onclick="mySign('-')" class="sign-color">-</button></p>
+<p><button onclick="console.log(7)" class="button-color">7</button>
+  <button onclick="console.log(8)" class="button-color">8</button>
+  <button onclick="console.log(9)" class="button-color">9</button>
+  <button onclick="mySign('*')" class="sign-color">*</button></p>
+  <P><button onclick="console.log(0)" class="button-color">0</button>
+  <button onclick="console.log('= ')"class="button-color">=</button>
+  <button onclick="console.log('.')" class="button-color">.</button>
+  <button onclick="mySign('*')" class="sign-color">/</button></P>
+  <p><button onclick="console.log('claer')"class="button-color color">clear</button></p>
+  <script>
+    
+ function mySign(operand){
+  if(operand==='+'){
+    sign='+';
+  }else if(operand==='-'){
+    sign='-';
+  }else if(operand==='*'){
+sign='*';
+  }else if(operand==='/'){
+    sign='/';
+  }
+
+
+
+
+
+
+
+
+
+
+
+/*
+ function convertToFahrenheit(celsius){
+ const Fahrenheit=(celsius*9/5)+32;
+ 
+ return Fahrenheit;
+}
+ 
+console.log(convertToFahrenheit(25));
+
+function FahrenheitToCelcius(Fahrenheit){
+  celsius=(Fahrenheit-32)*5/9
+  return celsius;
+}
+console.log(FahrenheitToCelcius(86));
+
+function changeTemperature(degrees,unit){
+if(unit==='F'){
+  const celsius=(degrees-32)*5/9;
+return celsius;
+}else if(unit==='C'){
+  const Fahrenheit=(degrees*9/5)+32;
+  return Fahrenheit;
+}
+
+}
+console.log(changeTemperature(25,'C'));
+console.log(changeTemperature(86,'F'));*/
+ }
+  </script>
+</body>
+</html>
